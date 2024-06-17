@@ -1,0 +1,65 @@
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+
+  &.primary {
+    background-color: $color-primary;
+    color: $color-light;
+
+    &:hover {
+      background-color: lighten($color-primary, 10%);
+    }
+  }
+
+  &.secondary {
+    background-color: $color-secondary;
+    color: $color-primary-dark;
+
+    &:hover {
+      background-color: lighten($color-secondary, 10%);
+    }
+  }
+
+  &.outlined {
+    background-color: transparent;
+    border: 2px solid currentColor;
+
+    &.primary {
+      color: $color-primary;
+
+      &:hover {
+        background-color: $color-light;
+      }
+    }
+
+    &.secondary {
+      color: $color-secondary;
+
+      &:hover {
+        background-color: $color-light;
+      }
+    }
+  }
+  &.light {
+    color: $color-light;
+    background-color: transparent;
+
+    &:hover {
+      background-color: lighten($color-primary-dark, 5%);
+    }
+  }
+  &.dark {
+    color: $color-primary-dark;
+    background-color: transparent;
+
+    &:hover {
+      background-color: lighten($color-light, 5%);
+    }
+  }
+
+}

@@ -1,0 +1,13 @@
+$color-primary-dark: #164863;
+$color-primary: #427d9d;
+$color-secondary: #9bbec8;
+$color-light: #ddf2fd;
+$color-error:#ff3333;
+
+//borders
+
+$primary-border:1px solid $color-secondary;
+$error-border:1px solid $color-error;
+$primary-border-radius:0.3rem;
+$primary-outline:2px solid $color-primary-dark;
+$error-outline:2px solid $color-error;

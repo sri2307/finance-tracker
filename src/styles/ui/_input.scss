@@ -1,0 +1,37 @@
+.input-group{
+    display: flex;
+    flex-flow: column;
+    max-width: 350px;
+    gap: 0.2rem;
+
+    &.error{
+        input{
+            border: $error-border;
+            &:focus{
+                outline: $error-outline;
+                border: none;
+            }
+        }
+        span{
+            color: $color-error;
+            font-size: 0.75rem;
+        }
+    }
+
+    label{
+        &.required::after{
+            content: '*';
+            color: $color-error;
+            margin-left: 0.3rem;
+        }
+    }
+    input{
+        padding: 1rem;
+        border: $primary-border;
+        border-radius: $primary-border-radius;
+        &:focus{
+            outline: $primary-outline;
+            border: none;
+        }
+    }
+}

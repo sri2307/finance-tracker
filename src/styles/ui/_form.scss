@@ -1,0 +1,24 @@
+.form{
+    padding: 1rem;
+    gap: 1rem;
+    width: 80%;
+
+    .form-section{
+        gap: 1rem;
+        h3{
+            color: $color-primary;
+            margin: 0;
+            padding-bottom: 0.75rem;
+            border-bottom: $primary-border;
+        }
+        .form-row{
+            gap: 1rem;
+            .input-group{
+                flex-basis:50%
+            }
+        }
+    }
+    .form-button-group{
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,72 @@
+.filter-overlay {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    // padding: 20px;
+    
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    .filter-section{
+        padding: 2rem;
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    overflow-y: auto;
+
+
+    }
+  }
+  
+  .filter-overlay.open {
+    transform: translateX(0);
+  }
+  
+  button {
+    margin-top: auto;
+  }
+
+  .filter-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 300px;
+  }
+  
+  .filter-container.open {
+    transform: translateX(0);
+    .filter-overlay {
+        transform: translateX(0);
+      }
+  }
+  
+  .filter-container:not(.open) {
+    transform: translateX(100%);
+  }
+
+  .checkbox-tree-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .expand-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  
+  .checkbox-tree-children {
+    margin-left: 20px;
+  }
+  
+
+  
